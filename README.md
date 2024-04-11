@@ -13,18 +13,18 @@ The relevant fields are Usage_kWh & Date.
 **Target Variable**: Log(Usage_kWh + 1)  
 **Model**: [Prophet](https://facebook.github.io/prophet/)  
 **Parameters**:   
-    {  
-    'growth': 'linear',  
-    'holidays': True,  
-    'seasonality_mode': 'additive',  
-    'changepoint_prior_scale': 0.001,  
-    'seasonality_prior_scale': 0.01,  
-    'holidays_prior_scale': 0.01,  
-    'yearly_seasonality': False,  
-    'weekly_seasonality': True,  
-    'daily_seasonality': True 
-    'interval_width': 0.9 
-    }  
+{  
+'growth': 'logistic',  
+ 'holidays': None,  
+ 'seasonality_mode': 'multiplicative',  
+ 'changepoint_prior_scale': 0.5,  
+ 'seasonality_prior_scale': 11,  
+ 'yearly_seasonality': False,  
+ 'weekly_seasonality': True,  
+ 'daily_seasonality': True,  
+ 'interval_width': 0.9  
+ }
+
 
 ## Evaluation
 **Metric**: Root mean squared error (RMSE)  
