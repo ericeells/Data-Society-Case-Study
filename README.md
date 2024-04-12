@@ -15,7 +15,7 @@ The relevant fields are Usage_kWh & Date.
 **Parameters**:   
 {  
 'growth': 'logistic',  
- 'holidays': [National South Korean Holidays] (https://pypi.org/project/holidays/),  
+ 'holidays': [National South Korean Holidays](https://pypi.org/project/holidays/),  
  'seasonality_mode': 'multiplicative',  
  'changepoint_prior_scale': 0.001,  
  'seasonality_prior_scale': 0.01,  
