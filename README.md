@@ -2,7 +2,7 @@
 Eells Case Study on Energy Consumption for Data Society's Final Interview 
 
 ## Description
-The accompanying Python notebook forecasts the expected active (real) power in January 2019 to determine if utilization is lower year over year and month over month. After assuming logistic growth and holiday impacts, it searches a hyperparameter space of 54 options. Note: it takes approximately 7 minutes to evaluate a single model.    
+The accompanying Python notebook forecasts the expected active (real) power in January 2019 to determine if utilization is lower year over year and month over month. After assuming logistic growth and holiday impacts, it searches a hyperparameter space of 54 options. Note: it takes approximately 7 minutes to evaluate a single model within the hyperparameter space.    
 The notebook also includes exploratory data analysis of active real power by load type and numerous time variables (e.g. day of week, time of day, day of month, etc.).  
 
 ## Data
@@ -15,7 +15,7 @@ The relevant fields are Usage_kWh & Date.
 **Parameters**:   
 {  
 'growth': 'logistic',  
- 'holidays': [National South Korean Holidays](https://pypi.org/project/holidays/),  
+ 'holidays': [South Korean Holidays](https://pypi.org/project/holidays/),  
  'seasonality_mode': 'multiplicative',  
  'changepoint_prior_scale': 0.001,  
  'seasonality_prior_scale': 0.01,  
